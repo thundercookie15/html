@@ -15,7 +15,7 @@ nav a {
     padding-right: 10px;
     padding-left: 5px;
 }
-div.wrapper {
+div.wrapper, footer {
     width: 960px;
     margin: auto;
 }
@@ -40,4 +40,12 @@ td.groen {
 }
 td.blauw {
     background-color: #ccffff;
+}
+footer {
+    padding:10px;
+    background-color: rgb(166,166,166);
+    color:white;
+}
+footer a {
+    color: white;
 }
