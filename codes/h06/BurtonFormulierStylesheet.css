@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+}
+div#wrapper {
+    width:1000px;
+    margin:auto;
+}
+div.form-group {
+
+}
+section.firstSection {
+    width: 50%;
+    float:left;
+}
+section.secondSection {
+    width:25%;
+    float:left;
+    height:441px;
+}
+.firstSection input {
+    float: right;
+}
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+form ul li {
+    padding: 10px;
+}
+form ul li input {
+    position: relative;
+    right:130px;
+    margin-left: 20px;
+}
+form ul li select {
+    position:relative;
+    left:90px;
+    margin-left:20px;
+}
+input.knoplocatie {
+    float: none;
+}
+form ul li input.knoplocatie {
+    position: unset;
+}
+form ul li label.geslachtlocatie {
+    margin-right: 90px;
+}
+form ul li label.locatielabel {
+    display: block;
+}
+form ul li textarea {
+    display: inline-block;
+    margin-left: 180px;
+    margin-top: -20px;
+}
+input.lekker-eten {
+    position: relative;
+    left: 0;
+}
+.knoppen {
+    margin-top:300px;
+    float:right;
+}
+
+
+
+
+
+
