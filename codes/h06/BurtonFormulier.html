@@ -6,69 +6,58 @@
     <link rel="stylesheet" href="BurtonFormulierStylesheet.css">
 </head>
 <body>
-     <div id="wrapper">
+    <div id="wrapper">
         <form action="https://www.savatarian.com/html5/form.php" method="post">
             <h2>Burton Education Formulier</h2>
-            <div class="form-group">
-                <section class="firstSection">
-                    <ul class="firstSection">
-                        <li>
-                            <!--Voornaam Input-->
-                            <label for="voornaam">Voornaam: </label>
-                            <input type="text" name="voornaam"/>
-                        </li>
-                        <!--Tussenvoegsel input-->
-                        <li>
-                            <label for="tussenvoegsel">Tussenvoegsel: </label>
-                            <input type="text" name="tussenvoegsel" />
-                        </li>
-                        <!--Achternaam input-->
-                        <li>
-                            <label for="achternaam">Achternaam: </label>
-                            <input type="text" name="achternaam" />
-                        </li>
-                        <!--Geslacht Input-->
-                        <li>
-                            <label class="geslachtlocatie" for="geslacht"> Geslacht: </label>
-                            <input class="knoplocatie" type="radio" name="geslacht" value="man"> Man
-                            <input class="knoplocatie" type="radio" name="geslacht" value="vrouw"> Vrouw
-                        </li>
-                    <li>
-                        <label for="kleurogen">Kleur ogen: </label>
-                            <select name="kleurogen">
-                                <option value="groen">Groen</option>
-                                <option value="blauw">Blauw</option>
-                                <option value="bruin">Bruin</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label for="geboortedatum">Geboortedatum: </label>
-                            <input type="date" name="geboortedatum"/>
-                        </li>
-                        <li>
-                            <label class="locatielabel" for="omschrijving">Omschrijving: </label>
-                            <textarea name="omschrijving" id="omschrijving" cols="30" rows="10"></textarea>
-                        </li>
-                    </ul>
-                </section>
-                <section class="secondSection">
-                    <ul>
-                        <li class="checkding">
-                            <label class="labeleten" for="lekker-eten">Lekker eten:</label><br>
-                            <input class="lekker-eten" type="checkbox" value="sperciebonen">
-                            <span class="checkbox">Sperciebonen</span><br>
-                            <input class="lekker-eten" type="checkbox" value="aardappelen">
-                            <span class="checkbox">Aardappelen</span><br>
-                            <input class="lekker-eten" type="checkbox" value="hamburger">
-                            <span class="checkbox">Hamburger</span>
-                        </li>
-                    </ul>
-                    <input class="knoppen" type="submit" name="OK">
-                    <input class="knoppen" type="button" onclick="window.location.replace('index.html')" value="Annuleer">
-                </section>
+                <!--Voornaam Input-->
+            <label for="voornaam">Voornaam: </label>
+            <input class="textinput" type="text" id="voornaam" name="voornaam"/>
+            <!--Lekker Eten-->
+            <label for="lekker-eten">Lekker eten:</label>
+            <div class="eten">
+                <input value="sperciebonen" name="lekker-eten" type="checkbox">
+                <label>Sperciebonen</label>
+            </div>
+            <label for="tussenvoegsel">Tussenvoegsel: </label>
+            <input class="textinput" id="tussenvoegsel" type="text" />
+            <div class="eten">
+                <input value="aardapplen" name="lekker-eten" type="checkbox">
+                <label>Aardappelen</label>
+            </div>
+            <!--Achternaam-->
+            <label for="achternaam">Achternaam: </label>
+            <input class="textinput" type="text" name="achternaam" id="achternaam" />
+            <div class="eten">
+                <input value="hamburger" name="lekker-eten" type="checkbox">
+                <label>Hamburger</label>
+            </div>
+            <!--Geslacht-->
+            <label for="geslacht">Geslacht: </label>
+            <div id="geslacht">
+                <input type="radio" name="geslacht" value="man">
+                <label>Man</label>
+                <input type="radio" name="geslacht" value="vrouw">
+                <label>Vrouw</label>
+            </div>
+            <!--Kleur Ogen-->
+            <label class="kleurogen" for="kleurogen">Kleur Ogen: </label>
+            <select name="kleurogen" id="kleurogen">
+                <option value="groen">Groen</option>
+                <option value="blauw">Blauw</option>
+                <option value="bruin">Bruin</option>
+            </select>
+            <!--Geboortedatum-->
+            <label class="geboortedatum" for="geboortedatum">Geboortedatum: </label>
+            <input class="textinput" type="date" id="geboortedatum">
+            <!--Omschrijving-->
+            <label class="omschrijving" for="omschrijving">Omschrijving: </label>
+            <textarea name="omschrijving" id="omschrijving" cols="5" rows="10"></textarea>
 
+            <div id="knoppen">
+            <input class="knoppen" type="button" onclick="window.location.replace('index.html')" value="Annuleer">
+            <input class="knoppen" type="submit" name="OK">
             </div>
         </form>
-     </div>
+    </div>
 </body>
 </html>

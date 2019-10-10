@@ -1,71 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
+* {
+    /*border: 1px dotted grey;*/
+    margin: 7px;
+    align-self: center;
 }
-div#wrapper {
-    width:1000px;
+
+#wrapper {
+    width: 80%;
     margin:auto;
 }
-div.form-group {
 
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
 }
-section.firstSection {
-    width: 50%;
-    float:left;
+
+form {
+    display: grid;
+    grid-template-columns: 12% 38% 10% 20% 30%;
 }
-section.secondSection {
-    width:25%;
-    float:left;
-    height:441px;
+
+h2 {
+    grid-column: 1/6;
 }
-.firstSection input {
-    float: right;
+
+div.eten {
+    display: flex;
+    grid-column: 4/6;
 }
-form ul {
-    list-style-type: none;
-    padding: 0;
+
+input.textinput, textarea {
+    width:50%;
 }
-form ul li {
-    padding: 10px;
+
+input, select, textarea {
+    border: solid 1px cornflowerblue;
 }
-form ul li input {
-    position: relative;
-    right:130px;
-    margin-left: 20px;
+
+select {
+    width: 70px;
 }
-form ul li select {
-    position:relative;
-    left:90px;
-    margin-left:20px;
+
+label.omschrijving {
+    align-self: flex-start;
 }
-input.knoplocatie {
-    float: none;
+
+label.geboortedatum, label.omschrijving, label.kleurogen {
+    grid-column: 1/2;
 }
-form ul li input.knoplocatie {
-    position: unset;
-}
-form ul li label.geslachtlocatie {
-    margin-right: 90px;
-}
-form ul li label.locatielabel {
-    display: block;
-}
-form ul li textarea {
-    display: inline-block;
-    margin-left: 180px;
-    margin-top: -20px;
-}
-input.lekker-eten {
-    position: relative;
-    left: 0;
-}
+
 .knoppen {
-    margin-top:300px;
-    margin-right: 5px;
-    float:right;
+    border: 2px outset rgb(211, 211, 211);
+    margin-right:5px;
 }
-
-
-
-
-
-
+#knoppen {
+    align-self: center;
+    grid-column:4/5;
+    display: inline;
+}
